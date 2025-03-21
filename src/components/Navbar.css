@@ -1,0 +1,80 @@
+/* NAVBAR STYLING */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centers the entire navbar content */
+  align-items: center;
+  padding: 0;
+  background: #fdecec; /* Light pink background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  position: fixed;
+  height: 60px; /* Adjusted height */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* NAVIGATION LINKS */
+.nav-links {
+  display: flex;
+  justify-content: center; /* Centers links */
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; /* Ensures the list is centered */
+  gap: 40px; /* Increased spacing for a balanced look */
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px 15px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* UNDERLINE EFFECT */
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #ff5678;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #ff5678; /* Soft Red */
+}
+
+/* RESPONSIVE NAVBAR */
+@media (max-width: 768px) {
+  .navbar {
+    height: 55px; /* Smaller height on mobile */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+}

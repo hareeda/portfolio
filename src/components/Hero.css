@@ -1,0 +1,143 @@
+/* HERO SECTION */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: calc(100vh - 80px); /* Adjusted to fit screen */
+  margin-top: -40px; /* Moves section up */
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* FADE-IN ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HERO IMAGE */
+.hero-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ff5678;
+  margin-bottom: 15px; /* Reduced spacing */
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-image:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* HERO TEXT */
+.hero-text {
+  max-width: 600px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+
+/* BUTTONS CONTAINER */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  animation: fadeIn 1.4s ease-in-out;
+}
+
+/* COMMON BUTTON STYLING */
+.hero-buttons a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 14px 28px;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  min-width: 140px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+/* BUTTON HOVER EFFECT */
+.hero-buttons a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.3s ease-in-out;
+}
+
+.hero-buttons a:hover::before {
+  left: 100%;
+}
+
+/* HIRE ME BUTTON - GRADIENT */
+.hire-me {
+  background: linear-gradient(135deg, #ff4e50, #fc913a);
+  color: white;
+}
+
+.hire-me:hover {
+  background: linear-gradient(135deg, #fc913a, #ff4e50);
+  transform: scale(1.05);
+}
+
+/* RESUME BUTTON - PURPLE GRADIENT */
+.resume {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+}
+
+.resume:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    margin-top: -30px;
+    padding-top: 40px;
+  }
+
+  .hero-buttons a {
+    width: 80%;
+    text-align: center;
+  }
+}

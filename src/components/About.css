@@ -1,0 +1,81 @@
+.about-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+h2 {
+    color: #222;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.skills-section {
+    margin-top: 40px;
+}
+
+.skills-section h3 {
+    font-size: 1.8rem;
+    color: #d9534f;
+    margin-bottom: 20px;
+}
+
+/* Skills Grid */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Badge Styling */
+.badge {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 25px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ff5858, #f857a6);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Section Title Styling */
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin: 30px 0 15px;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #ff758c;
+    margin: 8px auto;
+    border-radius: 2px;
+}
