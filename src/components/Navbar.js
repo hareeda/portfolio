@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-        {menuOpen ? "✖" : "☰"} {/* Hamburger toggles to close icon */}
+        {menuOpen ? "✖" : "☰"}
       </div>
 
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
