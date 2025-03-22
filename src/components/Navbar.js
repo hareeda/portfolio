@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="navbar">
-      <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/projects">Projects</Link></li>
-        <li><Link to="/experience">Experience</Link></li>
-        <li><Link to="/education">Education</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+      <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? "✖" : "☰"} {/* Hamburger toggles to close icon */}
+      </div>
+
+      <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+        <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+        <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
+        <li><Link to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link></li>
+        <li><Link to="/experience" onClick={() => setMenuOpen(false)}>Experience</Link></li>
+        <li><Link to="/education" onClick={() => setMenuOpen(false)}>Education</Link></li>
+        <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
       </ul>
     </nav>
   );
