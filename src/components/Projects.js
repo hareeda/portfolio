@@ -19,7 +19,7 @@ const Projects = () => {
               <li>Automated key user flows including <strong>registration, login, fund transfers, bill payments</strong>, and <strong>loan requests</strong>.</li>
               <li>Integrated test data management and <strong>Page Object Model (POM)</strong> for maintainability.</li>
             </ul>
-            <p><strong>GitHub Repository:</strong> <a href="GitHub Link" target="_blank" rel="noopener noreferrer">GitHub Link</a></p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/hareeda/playwright-banking" target="_blank" rel="noopener noreferrer">GitHub Link</a></p>
           </div>
         </div>
 
@@ -34,7 +34,7 @@ const Projects = () => {
               <li>Developed an automation suite for the <strong>Demoblaze e-commerce website</strong> using <strong>Cypress</strong>.</li>
               <li>Covered essential user scenarios like <strong>user authentication, product selection, checkout process</strong>, and <strong>order verification</strong> with <strong>Cypress tests</strong>.</li>
             </ul>
-            <p><strong>GitHub Repository:</strong> <a href="GitHub Link" target="_blank" rel="noopener noreferrer">GitHub Link</a></p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/hareeda/cypress-demoblaze-automation" target="_blank" rel="noopener noreferrer">GitHub Link</a></p>
           </div>
         </div>
 
@@ -49,7 +49,7 @@ const Projects = () => {
               <li>Automated <strong>REST API testing</strong> using <strong>JSONPlaceholder</strong>, a free online REST API for testing.</li>
               <li>Validated <strong>CRUD operations, response structures</strong>, and <strong>data integrity</strong> through comprehensive <strong>API test automation</strong>.</li>
             </ul>
-            <p><strong>GitHub Repository:</strong> <a href="GitHub Link" target="_blank" rel="noopener noreferrer">GitHub Link</a></p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/hareeda/json-api-project/tree/master" target="_blank" rel="noopener noreferrer">GitHub Link</a></p>
           </div>
         </div>
 
@@ -64,7 +64,7 @@ const Projects = () => {
               <li>Built a <strong>Behavior-Driven Development (BDD)</strong> framework for automating <strong>Sleepwell’s web application</strong> using <strong>Selenium with Cucumber</strong>.</li>
               <li>Defined <strong>Gherkin-based test scenarios</strong> to improve test clarity and coverage.</li>
             </ul>
-            <p><strong>GitHub Repository:</strong> <a href="GitHub Link" target="_blank" rel="noopener noreferrer">GitHub Link</a></p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/hareeda/Sleepwell-BDD-Project/tree/master" target="_blank" rel="noopener noreferrer">GitHub Link</a></p>
           </div>
         </div>
 
@@ -79,7 +79,7 @@ const Projects = () => {
               <li>Developed a <strong>Selenium automation framework</strong> for the <strong>Sleepwell website</strong>, focusing on <strong>UI test automation</strong>.</li>
               <li>Implemented reusable test scripts for <strong>login, navigation</strong>, and key functional flows.</li>
             </ul>
-            <p><strong>GitHub Repository:</strong> <a href="GitHub Link" target="_blank" rel="noopener noreferrer">GitHub Link</a></p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/hareeda/Sleepwell-Selenium-Project" target="_blank" rel="noopener noreferrer">GitHub Link</a></p>
           </div>
         </div>
 
